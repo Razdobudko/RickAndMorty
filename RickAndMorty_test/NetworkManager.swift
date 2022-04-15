@@ -1,0 +1,36 @@
+//
+//  NetworkManager.swift
+//  RickAndMorty_test
+//
+//  Created by Veranika Razdabudzka on 15.04.22.
+//
+
+import UIKit
+
+class NetworkManager {
+    
+    static var shared = NetworkManager()
+    
+    func parseJSON(completion: @escaping (Model) -> Void) {
+        
+        let urlString = "https://rickandmortyapi.com/api/character"
+        
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            guard let data = data else { return }
+            
+            do {
+                let character = try JSONDecoder().decode(Model.self, from: data)
+                DispatchQueue.main.async {
+                    completion(character)}
+            } catch{
+                print(error)
+            }
+        }.resume()
+    }
+}
