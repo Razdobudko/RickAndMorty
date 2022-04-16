@@ -42,6 +42,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.speciesLabel.text = result?.species ?? "species"
         let imageSet = result?.image ?? "image"
         cell.imageCharacter.downloaded(from: imageSet)
+        cell.selectionStyle = .none
         tableView.rowHeight = 150
         return cell
     }

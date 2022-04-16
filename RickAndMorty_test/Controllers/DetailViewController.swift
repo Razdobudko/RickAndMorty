@@ -30,6 +30,9 @@ class DetailViewController: UIViewController {
         statusLabel.text = model?.status
         locationLabel.text = model?.location.name
         
+        let count = model?.episode.count ?? 1
+        episodeLabel.text = "\(count)"
+        
         imageDetail.downloaded(from: model?.image ?? defaultImage)
     }
 }

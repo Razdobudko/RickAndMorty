@@ -13,4 +13,5 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var imageCharacter: UIImageView!
+    
 }

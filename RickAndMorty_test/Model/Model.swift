@@ -18,6 +18,7 @@ struct Results: Codable {
     var gender: String?
     var location: Locations
     var image: String?
+    var episode: [String]
 }
 
 struct Locations: Codable {
