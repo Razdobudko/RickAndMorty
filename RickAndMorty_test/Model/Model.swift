@@ -13,8 +13,14 @@ struct Model: Codable {
 
 struct Results: Codable {
     var name: String?
+    var status: String?
     var species: String?
     var gender: String?
+    var location: Locations
     var image: String?
+}
+
+struct Locations: Codable {
+    var name: String?
 }
 

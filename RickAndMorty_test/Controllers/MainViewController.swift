@@ -45,4 +45,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.rowHeight = 150
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetailController", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? DetailViewController {
+            detailVC.model = character?.results[tableView.indexPathForSelectedRow!.row]
+        }
+    }
 }
