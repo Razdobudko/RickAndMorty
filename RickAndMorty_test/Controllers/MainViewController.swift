@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
             self.tableView.reloadData()
         }
         tableView.register(UINib(nibName: xib, bundle: nil), forCellReuseIdentifier: xib)
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         

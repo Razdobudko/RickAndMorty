@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68A910C280AAAED0003927F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68A910B280AAAED0003927F /* BaseView.swift */; };
 		D6C210BC28098C010091112C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210BB28098C010091112C /* AppDelegate.swift */; };
 		D6C210BE28098C010091112C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210BD28098C010091112C /* SceneDelegate.swift */; };
 		D6C210C328098C010091112C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C210C128098C010091112C /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D68A910B280AAAED0003927F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		D6C210B828098C010091112C /* RickAndMorty_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C210BB28098C010091112C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C210BD28098C010091112C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C210C128098C010091112C /* Main.storyboard */,
+				D68A910B280AAAED0003927F /* BaseView.swift */,
 				D68A9107280AA9380003927F /* CustomCell */,
 			);
 			path = View;
@@ -195,6 +198,7 @@
 				D6C210D128098C890091112C /* MainViewController.swift in Sources */,
 				D6C210BC28098C010091112C /* AppDelegate.swift in Sources */,
 				D6C210D528098E0B0091112C /* NetworkManager+UIImageView.swift in Sources */,
+				D68A910C280AAAED0003927F /* BaseView.swift in Sources */,
 				D6C210BE28098C010091112C /* SceneDelegate.swift in Sources */,
 				D6C210D328098D1A0091112C /* Model.swift in Sources */,
 			);
