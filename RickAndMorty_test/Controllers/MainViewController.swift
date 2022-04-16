@@ -36,9 +36,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: xib, for: indexPath) as! CustomTableViewCell
         let result = character?.results[indexPath.row]
-        cell.nameLabel.text = result?.name
-        cell.genderLabel.text = result?.gender
-        cell.speciesLabel.text = result?.species
+        cell.nameLabel.text = result?.name ?? "name"
+        cell.genderLabel.text = result?.gender ?? "gender"
+        cell.speciesLabel.text = result?.species ?? "species"
+        let imageSet = result?.image ?? "image"
+        cell.imageCharacter.downloaded(from: imageSet)
+        tableView.rowHeight = 150
         return cell
     }
 }

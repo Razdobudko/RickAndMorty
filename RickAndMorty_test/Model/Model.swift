@@ -15,5 +15,6 @@ struct Results: Codable {
     var name: String?
     var species: String?
     var gender: String?
-//    var image: String?
+    var image: String?
 }
+

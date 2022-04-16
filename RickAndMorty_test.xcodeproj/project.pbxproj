@@ -14,7 +14,7 @@
 		D6C210C828098C030091112C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C210C628098C030091112C /* LaunchScreen.storyboard */; };
 		D6C210D128098C890091112C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210D028098C890091112C /* MainViewController.swift */; };
 		D6C210D328098D1A0091112C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210D228098D1A0091112C /* Model.swift */; };
-		D6C210D528098E0B0091112C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210D428098E0B0091112C /* NetworkManager.swift */; };
+		D6C210D528098E0B0091112C /* NetworkManager+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210D428098E0B0091112C /* NetworkManager+UIImageView.swift */; };
 		D6C210D8280992550091112C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C210D6280992550091112C /* CustomTableViewCell.swift */; };
 		D6C210D9280992550091112C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C210D7280992550091112C /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		D6C210C928098C030091112C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C210D028098C890091112C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D6C210D228098D1A0091112C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		D6C210D428098E0B0091112C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D6C210D428098E0B0091112C /* NetworkManager+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+UIImageView.swift"; sourceTree = "<group>"; };
 		D6C210D6280992550091112C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D6C210D7280992550091112C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D68A9107280AA9380003927F /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6C210D6280992550091112C /* CustomTableViewCell.swift */,
+				D6C210D7280992550091112C /* CustomTableViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		D68A9108280AA94E0003927F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C210D028098C890091112C /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D68A9109280AA95B0003927F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C210D228098D1A0091112C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D68A910A280AA9780003927F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C210C128098C010091112C /* Main.storyboard */,
+				D68A9107280AA9380003927F /* CustomCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D6C210AF28098C010091112C = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				D6C210CF28098C570091112C /* App */,
-				D6C210D228098D1A0091112C /* Model.swift */,
-				D6C210D428098E0B0091112C /* NetworkManager.swift */,
-				D6C210D028098C890091112C /* MainViewController.swift */,
-				D6C210D6280992550091112C /* CustomTableViewCell.swift */,
-				D6C210D7280992550091112C /* CustomTableViewCell.xib */,
-				D6C210C128098C010091112C /* Main.storyboard */,
+				D6C210D428098E0B0091112C /* NetworkManager+UIImageView.swift */,
+				D68A9109280AA95B0003927F /* Model */,
+				D68A910A280AA9780003927F /* View */,
+				D68A9108280AA94E0003927F /* Controllers */,
 				D6C210C428098C030091112C /* Assets.xcassets */,
 				D6C210C628098C030091112C /* LaunchScreen.storyboard */,
 				D6C210C928098C030091112C /* Info.plist */,
@@ -162,7 +194,7 @@
 				D6C210D8280992550091112C /* CustomTableViewCell.swift in Sources */,
 				D6C210D128098C890091112C /* MainViewController.swift in Sources */,
 				D6C210BC28098C010091112C /* AppDelegate.swift in Sources */,
-				D6C210D528098E0B0091112C /* NetworkManager.swift in Sources */,
+				D6C210D528098E0B0091112C /* NetworkManager+UIImageView.swift in Sources */,
 				D6C210BE28098C010091112C /* SceneDelegate.swift in Sources */,
 				D6C210D328098D1A0091112C /* Model.swift in Sources */,
 			);
